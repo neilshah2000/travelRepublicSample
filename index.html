@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Republic</title>
+    <meta charset="utf-8">
+    <link href="vendor/kendo.common.min.css" rel="stylesheet">
+    <link href="vendor/kendo.default.min.css" rel="stylesheet">
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/kendo.all.min.js"></script>
+    <script src="travelRepublic.js"></script>
+    <link href="travelRepublic.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="page">
+        <h2>Travel Republic Hotels Example</h2>
+        <div class="content">
+            <div class="sidePanal">
+                <div class="filters">
+                    <h2>Filters:</h2>
+                    <div class="filter">
+                        <h3>Name</h3>
+                        <div id="kendoNameFilter"></div>
+                    </div>
+                    <div class="filter">
+                        <h3>Stars</h3>
+                        <div id="kendoStarsFilter"></div>
+                    </div>
+                    <div class="filter">
+                        <h3>User Rating</h3>
+                        <div id="kendoUserRatingFilter"></div>
+                    </div>
+                    <div class="filter">
+                        <h3>Minimum Cost</h3>
+                        <div id="kendoMinCostFilter"></div>
+                    </div>
+                </div>
+                <div class="sort">
+                    <h2>Sort:</h2>
+                    <div id="sortList"></div>
+                </div>
+            </div>
+            <div class="main">
+                <div id="listView"></div>
+                <div id="pager"></div>
+            </div>
+        </div>
+    </div>
+
+    <script id="template" type="text/x-kendo-tmpl">
+        <div class="hotel">
+            <img src="#:ImageUrl#"/>
+            <div class="details">
+                <h3> #: Name # </h3>
+                <div> #: Location # </div>
+                <div> #: Distance # km</div>
+                <div> $#: MinCost # </div>
+                <div class="ratings">
+                    <span> #: Stars # Stars</span>
+                    <span> |  User Rating: #: UserRating #</span>
+                    <span> |  #: UserRatingTitle # </span>
+                    <span> |  #: UserRatingCount # Users</span>
+                </div>
+            </div>
+        </div>
+    </script>
+</body>
+</html>

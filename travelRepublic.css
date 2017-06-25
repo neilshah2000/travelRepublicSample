@@ -1,0 +1,44 @@
+.demo-section h3 {
+    margin: 5px 0 15px 0;
+}
+.userRating span{
+    display: block;
+}
+.content{
+    display: flex
+}
+.sidePanal{
+    flex-grow: 1;
+    background-color: lightgray;
+}
+.main{
+    flex-grow: 2
+}
+.filters, .sort{
+    padding: 10px;
+}
+.hotel {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0 5px;
+    padding: 0;
+    display: flex;
+    padding: 10px;
+}
+.hotel img{
+    height: 200px;
+    width: 200px;
+}
+.hotel .details{
+    padding: 0px 0px 0px 10px;
+    position: relative;
+    width: 100%;
+}
+.hotel .details h3{
+    margin-top: 3px;
+}
+.hotel .details .ratings{
+    position: absolute;
+    bottom: 1px;
+}
